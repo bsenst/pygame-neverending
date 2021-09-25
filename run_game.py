@@ -46,7 +46,6 @@ map = generate_map(pos)
 
 def make_step(next_pos, pos):
     traversal = False
-    print(pos)
     if next_pos[0] == -1 or next_pos[0] == 20 or next_pos[1] == -1 or next_pos[1] == 30: # defines border traversal
         traversal = True
         if next_pos[0] == -1: # to the top
@@ -59,7 +58,6 @@ def make_step(next_pos, pos):
             next_pos = (next_pos[0], 0)
         if map[next_pos[0]][next_pos[1]] != " ": map[next_pos[0]][next_pos[1]] = " "
     if map[next_pos[0]][next_pos[1]] != " ": next_pos = pos
-    print(next_pos, traversal)
     return next_pos, traversal
 
 while True:
