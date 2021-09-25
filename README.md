@@ -8,4 +8,4 @@ The game depends on the following libraries:
 * numpy 1.20.2
 * random
 
-The game is licensed under according to the MIT licence
+The game released under the MIT license.
